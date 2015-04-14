@@ -20,7 +20,8 @@ class Golf
   end
 
   def hole_6 a
-    (["to you"]*3).insert(2,"dear #{a}").map{|x|"Happy birthday #{x}"}.join"\n"
+    b="to you"
+    [b,b,"dear #{a}",b].map{|x|"Happy birthday #{x}"}.join"\n"
   end
 
   def hole_7 a,n

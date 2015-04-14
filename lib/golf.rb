@@ -17,7 +17,7 @@ class Golf
   end
 
   def hole_5 a,b
-    a.upcase.chars.grep(/\w/).sort==b.upcase.chars.grep(/\w/).sort
+    [a,b].map{|x|x.upcase.chars.grep(/\w/).sort}.reduce :==
   end
 
   def hole_6 a

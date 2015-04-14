@@ -21,7 +21,7 @@ class Golf
 
   def hole_6 a
     b="to you"
-    [b,b,"dear #{a}",b].map{|x|"Happy birthday #{x}"}.join"\n"
+    [b,b,"dear "+a,b].map{|x|"Happy birthday #{x}"}.join"\n"
   end
 
   def hole_7 a,n

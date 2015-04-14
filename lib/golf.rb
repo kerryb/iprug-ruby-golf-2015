@@ -12,7 +12,8 @@ class Golf
   end
 
   def hole_4 x,y
-    ?++?-*x+"+\n"+(?|+" "*x+?|"\n")*y+?++?-*x+?+
+    a = ?++?-*x+"+"
+    a+?\n+(?|+" "*x+?|"\n")*y+a
   end
 
   def hole_5 a,b
